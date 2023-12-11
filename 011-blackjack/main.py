@@ -4,7 +4,6 @@ from art import logo
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
-
 def deal_card():
     """
   returns a random card from the deck
@@ -12,7 +11,6 @@ def deal_card():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     card = random.choice(cards)
     return card
-
 
 def calculate_score(cards):
     """
@@ -26,7 +24,6 @@ def calculate_score(cards):
         cards.append(1)
 
     return sum(cards)
-
 
 def compare(user_score, computer_score):
     if user_score == computer_score:
@@ -43,7 +40,6 @@ def compare(user_score, computer_score):
         return "You win!"
     else:
         return "You lose!"
-
 
 def play_game():
     print(logo)
@@ -81,7 +77,6 @@ def play_game():
         f"Computer's final hand is: {computer_cards}, final score: {computer_score}"
     )
     print(compare(user_score, computer_score))
-
 
 while input(
         "Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
